@@ -10,24 +10,16 @@ int main(void)
 
 	for (k = 1; k <= 100; k++)
 	{
-		if (k % 3 == 0 && k % 5 != 0)
-		{
-			printf(" Fizz");
-		}
-		else if (k % 5 == 0 && k % 3 != 0)
-		{
-			printf(" Buzz");
-		}
-		else if (k % 3 == 0 && k % 5 == 0)
-		{
-			printf(" FizzBuzz");
-		}
-		else if (k % 3 != 0 && k % 5 != 0)
-		{
+		printf(" ");
+		if (k % 3 == 0)
+			printf("Fizz");
+		if (k % 5 == 0)
+			printf("Buzz");
+		if (k % 3 == 0 && k % 5 == 0)
+			printf("FizzBuzz");
+		if (k % 3 != 0 && k % 5 != 0)
 			printf("%d", k);
-		}
 	}
 	printf("\n");
-
 	return (0);
 }
