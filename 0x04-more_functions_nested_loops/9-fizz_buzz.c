@@ -22,11 +22,7 @@ int main(void)
 		{
 			printf(" FizzBuzz");
 		}
-		else if (k == 1)
-		{
-			printf("%d", k);
-		}
-		else
+		else if (k % 3 != 0 && k % 5 != 0)
 		{
 			printf("%d", k);
 		}
